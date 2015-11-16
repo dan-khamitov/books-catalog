@@ -1,0 +1,13 @@
+{
+  "name": "books-catalog",
+  "description": "Books catalog test app",
+  "version": "0.0.1",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.7"
+  }
+}

@@ -1,0 +1,18 @@
+md-content.book(flex)
+    md-toolbar
+        .md-toolbar-tools
+            md-button(ui-sref="catalog") back
+    div(layout="row", layout-sm="column")
+        div.image_container(flex)
+            img(
+                ng-src="http://storage.aggregion.com/api/files/{{book.cover}}/shared/data"
+            )
+        div(flex)
+            h1(ng-bind="book.title.default")
+            h3(ng-bind="book.options.authors")
+            h5 Supported platforms
+            ul
+                li(
+                    ng-repeat="p in book.platformSupport",
+                    ng-bind="p"
+                )

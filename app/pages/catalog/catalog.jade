@@ -1,0 +1,18 @@
+md-content.catalog(flex, layout-padding)
+   md-grid-list(
+      md-cols-sm="4",
+      md-cols-md="8",
+      md-cols-gt-md="10",
+      md-row-height-gt-md="1:1",
+      md-row-height="1:1",
+      md-gutter="12px"
+   )
+      md-grid-tile(
+         md-rowspan="3",
+         md-colspan="2",
+         ui-sref="book({bookId: b.id})",
+         ng-repeat="b in books",
+         style="background-image: url(http://storage.aggregion.com/api/files/{{b.cover}}/shared/data)"
+      )
+         md-grid-tile-footer
+            h3(ng-bind="b.title.default")
