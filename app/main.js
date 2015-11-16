@@ -24,7 +24,7 @@ angular.module('app', [
 
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $locationProvider.html5Mode({
-            enabled: false,
+            enabled: true,
             requireBase: false
         });
 
@@ -41,6 +41,6 @@ angular.module('app', [
 
     })
 
-.run(function ($state) {
-        $state.go('catalog');
+.run(function ($location) {
+        $location.path("/catalog");
     });
