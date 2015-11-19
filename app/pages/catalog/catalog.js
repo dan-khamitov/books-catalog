@@ -4,7 +4,7 @@ angular.module('app.pages.catalog', ['ui.router'])
 
         $stateProvider
             .state('catalog', {
-                url: '/catalog',
+                url: '/',
                 templateUrl: 'catalog/catalog.html',
                 controller: 'CatalogPageCtrl',
                 resolve: {

@@ -38,6 +38,4 @@ angular.module('app', [
 
     })
 
-.run(function ($location) {
-        $location.path("/catalog");
-    });
+.run();

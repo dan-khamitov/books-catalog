@@ -7,7 +7,7 @@ md-content.book(flex)
             img(
                 ng-src="http://storage.aggregion.com/api/files/{{book.cover}}/shared/data"
             )
-        div(flex)
+        div(flex layout-margin)
             h1(ng-bind="book.title.default")
             h3(ng-bind="book.options.authors")
             h5 Supported platforms
